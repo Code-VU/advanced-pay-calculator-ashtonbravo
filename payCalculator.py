@@ -1,10 +1,21 @@
 def calculatePay():
     
     # This first line is provided for you
-    hrs = float(input("Enter Hours:"))
-    rate = float(input("Enter Rate:"))
-    pay = hrs * rate
-    print ("pay:", pay)
+    hrs = input("Enter Hours:")
+    rate = input("Enter Rate:")
+    fh = float(hrs)
+    fr = float (rate)
+    #print (fh,fr)
+    if fh > 40 :
+        #print("Overtime")
+        otp = (fh - 40.0) * (fr * 0.5)
+        #print(reg,otp)
+        xp = reg + otp
+    else:
+        #print("Regular")
+        xp = fh * fr
+    print("Pay:", xp)
+    
 
     
     # end assignment
