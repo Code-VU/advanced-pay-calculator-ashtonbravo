@@ -7,7 +7,7 @@ def calculatePay():
     rate = float(rate)
   
     #print (hrs,rate)
-    if hrs > 40 :
+    if hrs < 40 :
         pay = hrs * rate
     elfi hrs > 40 :
         pay = 40*rate + (h-40)*rate*1.5
