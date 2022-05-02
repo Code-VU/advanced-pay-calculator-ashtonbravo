@@ -1,19 +1,20 @@
 def calculatePay():
     
     # This first line is provided for you
-    hrs = float(input("Enter Hours:"))
-    rate = float(input("Enter Rate:"))
+    hrs = input("Enter Hours:")
+    hrs = float(hrs)
+    rate = input("Enter Rate:")
+    rate = float(rate)
   
     #print (hrs,rate)
     if hrs > 40 :
-        print("Overtime")
-        Overtime = (hrs - 40.0) * (hrs * 0.5)
-        #print(reg,otp)
-        Pay = reg + otp
-    else:
-        #print("Regular")
-        Pay = hrs * rate
-    print("Pay:", Pay)
+        pay = hrs * rate
+    elfi hrs > 40 :
+        pay = 40*rate + (h-40)*rate*1.5
+    print (pay)
+
+
+
     
 
     
