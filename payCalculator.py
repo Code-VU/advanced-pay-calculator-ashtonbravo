@@ -3,9 +3,9 @@ def calculatePay():
     # This first line is provided for you
     hrs = input("Enter Hours:")
     rate = input("Enter Rate:")
-    Pay = hrs * rate
-    print (Pay)
-    
+    pay = hrs * rate
+    print (pay)
+
     
     # end assignment
 
