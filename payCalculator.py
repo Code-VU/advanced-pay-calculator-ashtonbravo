@@ -6,7 +6,7 @@ def calculatePay():
   
     #print (hrs,rate)
     if hrs > 40 :
-        #print("Overtime")
+        print("Overtime")
         Overtime = (hrs - 40.0) * (hrs * 0.5)
         #print(reg,otp)
         Pay = reg + otp
