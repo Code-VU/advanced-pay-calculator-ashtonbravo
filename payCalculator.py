@@ -2,9 +2,9 @@ def calculatePay():
     
     # This first line is provided for you
     hrs = input("Enter Hours:")
-    float = float(hrs)
+    hrs = float(hrs)
     rate = input("Enter Rate:")
-    float = float(rate)
+    rate = float(rate)
   
     #print (hrs,rate)
     if h <= 40 :
