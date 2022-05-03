@@ -9,9 +9,10 @@ def calculatePay():
     #print (hrs,rate)
     if hrs < 40 :
         pay = hrs * rate
-    else hrs > 40 :
-        pay = 40*rate + (h-40)*rate*1.5
-    print (pay)
+        print (pay)
+    elif hrs > 40 :
+        overtime = 40*rate + (h-40)*rate*1.5
+    print (overtime)
 
 
 
