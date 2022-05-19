@@ -1,22 +1,27 @@
-def calculatePay():
+#def calculatePay():
     
     # This first line is provided for you
 
-    sh = input("Enter Hours: ")
-    sr = input("Enter Rate: ")
-    fh= float(sh)
-    fr = float(sr)
+hours = float(input("Enter Hours: "))
+rate = float(input("Enter Rate: "))
+hrs= float(hours)
+rte = float(rate)
+normalPay= float(hrs * rate)
 #print (fh, fr)
-    if fh > 40: 
-        #print("Overtime")
-        reg = fr * fh
-        otp = (fh - 40.0) * (fr * 0.5)
+if hrs > 40: 
+    #print("Overtime")
+    overtimePay = (hrs-40) * (rate*0.5)
+    totalPay= normalPay + overtimePay
+    print(totalPay)
+else:
+    print (normalPay)
+       # otp = (fh - 40.0) * (fr * 0.5)
         #print (reg,otp)
-        xp = reg + otp
-    else:
+       # xp = reg + otp
+    #else:
         #print("regular")
-        xp = fh * fr
-    print("Pay:", xp)
+        #xp = fh * fr
+  #  print("Pay:", xp)
 
     
     # end assignment
